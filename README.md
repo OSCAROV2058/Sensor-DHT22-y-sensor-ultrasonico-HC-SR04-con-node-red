@@ -32,7 +32,7 @@ Este repositorio muestra como podemos programar una ESP32 con el sensor ultrason
 
 ![]()
 
-   -Colocamos tres bloques function y lo configuramos con los siguentes codigos.
+   -Colocamos tres bloques function y los configuramos con los siguentes codigos.
 
 ```
 msg.payload = msg.payload.TEMPERATURA;
@@ -51,6 +51,25 @@ msg.payload = msg.payload.DISTANCIA;
 msg.topic = "DISTANCIA";
 return msg;
 ```
+
+   -Colocamos tres bloques gauge y los configuramos como se muestran en las siguientes imagenes.
+   
+![]()
+
+![]()
+
+![]()
+
+   -Colocamos un bloque chart y lo configuramos como se muestran en la siguiente imagen.
+
+![]()
+
+2. Realizamos las siguientes conexiones como se muestran en la siguiente imagen.
+
+![]()
+
+3. Abrir la terminal de programación (esp32) y colocar la siguente programación:
+
 ```
 #include <ArduinoJson.h>
 #include <WiFi.h>
@@ -206,41 +225,35 @@ doc["DISTANCIA"] = String(d);
 }
 ```
 
+4. Instalar las siguientes librerias:
+   
+   -DTH sensor library for ESPx.
 
-   -
+   -ArduinoJson
+   
+   -WiFi
+   
+   -PubSubClient
 
-   -
-
-   -
-1. Abrir la terminal de programación y colocar la siguente programación:
-
-
-
-
-
-```
-
-```
-
-2. Instalar la libreria de LiquidCrystal I2C y DTH sensor library for ESPx como se muestra en la siguente imagen.
+5. Hacer la conexion del sensor ultrasonico y DHT22 con la ESP32 como se muestra en la siguente imagen.
 
 ![]()
-3. Hacer la conexion del sensor ultrasonico, DHT22 y LCD con la ESP32 como se muestra en la siguente imagen.
 
-![]()
+6. Al hacer la conexion WIFI en la pagina NODE RED debemos seleccionar el boton DEPLOY para cargar los datos.
+
 ## Instrucciónes de operación
 
 1. Iniciar simulador.
 
-2. Visualizar los datos en el monitor serial. (CURSO, NOMBRE Y CARRERA, FECHA).
-
-3. Colocar la temperatura y humedad dando doble click al sensor DHT22.
+2. Colocar la temperatura y humedad dando doble click al sensor DHT22.
    
-4. Colocar la distancia dando doble click al sensor ultrasonico.
+3. Colocar la distancia dando doble click al sensor ultrasonico.
+
+4. Visualizar en la seccion dashboard los gauges y la grafica generada en tiempo real.
 
 ## Resultados
 
-Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en las siguentes imagenes.
+Cuando haya funcionado, verás los valores de los sensores reflejajdos en los gauges como se muestra en las siguentes imagenes, variando los valores de temperatura, humedad y distancia.
 
 ![]()
 
@@ -248,9 +261,6 @@ Cuando haya funcionado, verás los valores dentro del monitor serial como se mue
 
 ![]()
 
-![]()
-
-![]()
 
 ## Creditos
 
