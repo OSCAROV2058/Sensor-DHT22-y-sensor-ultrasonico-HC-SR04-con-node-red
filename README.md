@@ -26,11 +26,11 @@ Este repositorio muestra como podemos programar una ESP32 con el sensor ultrason
 
    -MQQT IN y colocar la IP : 52.29.87.71 como se muestra en la siguiente imagen.
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image.png?raw=true)
  
    - Colocar el bloque JSON y configurarlo como se muestra en la imagen.
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(1).png?raw=true)
 
    -Colocamos tres bloques function y los configuramos con los siguentes codigos.
 
@@ -54,19 +54,23 @@ return msg;
 
    -Colocamos tres bloques gauge y los configuramos como se muestran en las siguientes imagenes.
    
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(2).png?raw=true)
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(3).png?raw=true)
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(4).png?raw=true)
 
    -Colocamos un bloque chart y lo configuramos como se muestran en la siguiente imagen.
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(5).png?raw=true)
+
+   -Colocamos un bloque debug para visualizar los datos enviados en la pagina de NODE RED
+   
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(7).png?raw=true)
 
 2. Realizamos las siguientes conexiones como se muestran en la siguiente imagen.
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(6).png?raw=true)
 
 3. Abrir la terminal de programación (esp32) y colocar la siguente programación:
 
@@ -237,7 +241,7 @@ doc["DISTANCIA"] = String(d);
 
 5. Hacer la conexion del sensor ultrasonico y DHT22 con la ESP32 como se muestra en la siguente imagen.
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(8).png?raw=true)
 
 6. Al hacer la conexion WIFI en la pagina NODE RED debemos seleccionar el boton DEPLOY para cargar los datos.
 
@@ -255,11 +259,11 @@ doc["DISTANCIA"] = String(d);
 
 Cuando haya funcionado, verás los valores de los sensores reflejajdos en los gauges como se muestra en las siguentes imagenes, variando los valores de temperatura, humedad y distancia.
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(10).png?raw=true)
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(11).png?raw=true)
 
-![]()
+![](https://github.com/OSCAROV2058/Sensor-DHT22-y-sensor-ultrasonico-HC-SR04-con-node-red/blob/main/image%20(12).png?raw=true)
 
 
 ## Creditos
